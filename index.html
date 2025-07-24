@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 기능 사이트</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #000 0%, #fff 100%);
+    }
+    .container { max-width: 400px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+    h1 { text-align: center; }
+    input[type="text"] { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 10px 0; border-bottom: 1px solid #eee; }
+    li:last-child { border-bottom: none; }
+    .no-result { color: #888; text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>검색 기능 예제</h1>
+    <input type="text" id="searchInput" placeholder="검색어를 입력하세요..." />
+    <ul id="resultList"></ul>
+    <div id="noResult" class="no-result" style="display:none;">검색 결과가 없습니다.</div>
+    <img id="fruitImg" style="display:none;max-width:180px;display:block;margin:24px auto 0 auto;border-radius:12px;box-shadow:0 4px 16px #0002;" alt="과일 이미지" />
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
